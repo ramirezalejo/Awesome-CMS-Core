@@ -8,6 +8,6 @@ import "./App/lib";
 import "./App/app";
 import { isDevEnviroment } from "./App/Helper/Enviroment";
 
-if (isDevEnviroment()) {
+if (isDevEnviroment() && module.hot) {
   module.hot.accept();
 }
